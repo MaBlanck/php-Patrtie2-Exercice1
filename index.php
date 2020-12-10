@@ -1,3 +1,7 @@
+<?php
+    $age = 18;
+?>
+
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -6,18 +10,11 @@
     <title>Exercice 1 Partie 2</title>
 </head>
 <body>
-    
-    <?php
-    $age = 10;
-    if($age >= 18) 
-    {
-        echo "Vous êtes majeur";
-    } 
-    else 
-    {
-        echo "Vous êtes mineur";
-    };
-    ?>
-
+    <h1>Exercice 1 Partie 2</h1> 
+    <?php  if ($age >= 18): ?>
+    <p><?= 'Vous êtes majeur'; ?></p>
+    <?php else :?>
+    <p><?= 'Vous êtes mineur'; ?></p>
+    <?php endif ;?>
 </body>
 </html>
